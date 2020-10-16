@@ -13,13 +13,12 @@ const MODULE_DIR = path.parse(packageJson.module).dir;
 export default [
   {
     cache: true,
-    external(id) {
-      return id === 'react' || id.startsWith('react/');
-    },
+    external: ['react'],
     input: 'src/index.ts',
     output: [
       {
         dir: MAIN_DIR,
+        exports: 'auto',
         format: 'cjs',
         sourcemap: IS_DEV,
       },
