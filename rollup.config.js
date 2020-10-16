@@ -4,7 +4,7 @@ import path from 'path';
 import typescript2 from 'rollup-plugin-typescript2';
 import packageJson from './package.json';
 
-const EXTERNAL = new Set(Object.keys(packageJson.peerDependencies));
+const EXTERNAL = new Set([...Object.keys(packageJson.peerDependencies)]);
 
 const IS_DEV = process.env.NODE_ENV === 'development';
 
