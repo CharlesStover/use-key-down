@@ -3,10 +3,10 @@ node_js: 14
 branches:
   only: master
 install:
-- yarn
+  - yarn
 script:
-- yarn prepublishOnly
-- yarn test
+  - yarn test
+  - yarn build
 deploy:
   api_key:
     secure: rJToYP9x3DqS8wxflM19Wdm1SJHeqHQRJ+V7wKc+8mbNW2fcU+3rTzJ9/pSgIs6IixoAx6H6frO/k2ovQL6JcBpJZBp40qhi2B2DoJRHlAX49K3vahg1iXf+FCYLtp6jS0iDyyKUUjO8FXB6i8BbZImEOCB9UOsEFPeT80/Iw7Uh0mdr1ZQQWF4oW1tNdVKpisV+4ogJymX1E8DwaF5MevFMklsLNJgW89A8gj9gIXf++cr39AP2/P2/LT+Unry5qSmHaiWs0VicxV4hDIR8V66QJIXaCb8FptNmz2pnBwjOxcY0vkvtN2TZVuwX+vSU/btYdqnSCrmznAyF1Aee2Qi2CXT2sO7YCAKLZ0kyQzZTH0atrynHEe9LrUU51wJn8mmM/GHeUzO57L9vW6gR28/ouMLCZ2UnGAnbT+CuEQ3NmyRftud6Mm1CjnQchvFHYNa3OdgO9NkGWNuI8F2PTkcl6W3EfzAaD98wIhk79XUqe5DZvUEJGEHT/cpQm5GYuu9xFjgL2Yev5dE/17mRKI8bmbkJR9LUGtKnWdUhy8TeRn7ZCyl7JIYGc2vJF7PtE79eRg5rQ2TLdcIiZR1XwWDD4/SOeqfPEYECz3ZY177SmrfDEGhAhKYESp8LcH2DaoxylRZMh2CLshmyv30kJxybn59G4rbLmoEwfATJgAs=
